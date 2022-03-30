@@ -19,8 +19,7 @@ public class Pairs {
 
 		for (int i = 0; i < count; i++) {
 			for (int j = i + 1; j < count; j++) {
-				if ((arr[i] + arr[j]) % k == 0)
-					if(arr[i]<arr[j])
+				if ((arr[i]<arr[j]) && (arr[i] + arr[j]) % k == 0)
 					System.out.println(arr[i] + " " + arr[j]);
 			}
 		}
